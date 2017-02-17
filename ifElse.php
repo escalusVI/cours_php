@@ -1,3 +1,4 @@
+<?php include("head.php");?>
 <?php
 $age = 8;
  
@@ -14,3 +15,4 @@ else // SINON
  
 echo "Avez-vous l'autorisation d'entrer ? La réponse est : $autorisation_entrer";
 ?>
+

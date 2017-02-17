@@ -1,3 +1,5 @@
+<?php include("head.php");?>
+
 <?php
 $nombre_de_lignes = 1;
 
@@ -17,3 +19,4 @@ while ($nombre_de_lignes <= 100)
     $nombre_de_lignes++;
 }
 ?>
+

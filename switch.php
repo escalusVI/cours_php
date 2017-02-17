@@ -1,3 +1,5 @@
+<?php include("head.php");?>
+
 <?php
 $note = 10;
 
@@ -35,3 +37,4 @@ switch ($note) // on indique sur quelle variable on travaille
         echo "Désolé, je n'ai pas de message à afficher pour cette note";
 }
 ?>
+

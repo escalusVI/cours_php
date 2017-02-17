@@ -1,3 +1,5 @@
+<?php include("head.php");?>
+
 <!--strlen: retourne le nombre de caractere dans un phrase chiffres et espace inclus-->
 <?php
 $phrase = 'Bonjour tout le monde ! Je suis une phrase !';
