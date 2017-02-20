@@ -14,7 +14,8 @@
 		Veuillez entrer le mot de passe pour obtenir les codes d'accès au serveur central de la NASA : !</p>
 	<form method="post" action="une_page.php">
 		<p>
-			<input type="password" name="password"/>
+			<input type="text" name="prenom" placeholder="prénom"/><br/>
+			<input type="password" name="password" placeholder="mot de passe" />
 			<input type="submit" value="Valider"/>
 		</p>
 	</form>
@@ -22,10 +23,11 @@
 	<?php
 	}
 	elseif ($_POST['password'] != "kangourou") {
-		echo '<p>Mot de passe incorrect ! <a href="une_page.php">essayez de nouveaux</a></p> ';
+		echo '<p>Mot de passe incorrect '.htmlspecialchars($_POST ['prenom']). ' !<br/> <a href="une_page.php">essayez de nouveaux</a></p> ';
 	}
 	else
 	{?>
+		<h2>Bienvenue <?php echo $_POST['prenom'] ?><h2>
 		<h1>Voici les codes d'accès :</h1>
         <p><strong>CRD5-GTFT-CK65-JOPM-V29N-24G1-HH28-LLFV</strong></p>   
         
